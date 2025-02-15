@@ -78,15 +78,15 @@ img {
     
 }
 .craftingP {
-  justify-content: center;
+
   font-family: "Rhodium Libre", serif;
   font-size: 14px;
   font-weight: 400;
   max-width: 400px;
-  text-align: center;
+  text-align: left;
   transform: translateY(20px);
   max-width: 400px;
-  margin-left: 10px;
+  margin-left: 35px;
   margin-right: 10px;
   line-height: 20px;
   animation: fadeIn linear; 
