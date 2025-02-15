@@ -12,49 +12,39 @@
         font-weight: 300;
         font-size: 24px;
          margin-top: 40px;
-         animation: fadeIn3 linear; 
-animation-timeline: view();
-animation-range: entry cover 20%;
     }
 
     .footerText {
         margin-left: 30px;
-        animation: fadeIn3 linear; 
-animation-timeline: view();
-animation-range: entry cover 10%;
+
     }
 
     .map {
         max-width: 500px;
         width: 90%;
         border-radius: 20px;
-        animation: fadeIn3 linear; 
-animation-timeline: view();
-animation-range: entry cover 20%;
+
     }
     
     .social {
         display: flex;
         flex-direction: row;
         margin-left: 30px;
-        animation: fadeIn3 linear; 
-animation-timeline: view();
-animation-range: entry cover 10%;
+
     }
 
 
     .iconFB {
         width: 40px;
         cursor: pointer;
-        animation: fadeIn3 linear; 
+      
 
     }
     .iconInsta {
         width: 40px;
         margin-left: 30px;
         cursor: pointer;
-        animation: fadeIn3 linear; 
-
+      
     }
 
    .rights {
@@ -81,7 +71,7 @@ animation-range: entry cover 10%;
   
   .fade-in3 {
     opacity: 0.2; /* Start invisible */
-    animation: fadeIn 0.6s ease-out forwards; 
+   
   }
   
   /* Optional: Delay animations for staggered effects */
