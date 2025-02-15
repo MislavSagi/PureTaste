@@ -27,14 +27,13 @@
     flex-direction: column;
     background-color: #F6F8CC;
     height: auto;
-
-    padding-bottom: 50px;
     
   }
 
 
 .sTitle {
   align-items: center;
+  justify-content: center;
   font-family: "Rhodium Libre", serif;
   font-size: 20px;
   font-weight: 700;
@@ -44,6 +43,7 @@
   animation: fadeIn linear; 
   animation-timeline: view();
   animation-range: entry cover 40%;
+  margin-bottom: 50px;
 }
 img {
 
@@ -51,14 +51,17 @@ img {
   border-radius: 5px;
   
 }
+
+.picture1 {
+  
+}
+
 .picture1 .picture2 .picture1 {
   display: flex;
   flex-direction: column;
 }
 
 .crafting {
-  margin: 0;
-    justify-content: center;
     font-family: "Rhodium Libre", serif;
     font-size: 18px;
     font-weight: 700;
@@ -70,7 +73,8 @@ img {
     margin-right: 10px;
     animation: fadeIn linear; 
     animation-timeline: view();
-    animation-range: entry cover 20%;
+    animation-range: entry cover 20%
+    
 }
 .craftingP {
   justify-content: center;
@@ -89,9 +93,8 @@ img {
   animation-range: entry cover 20%;
 }
 
-.coffeeIcon {
-
-
+.text1 {
+transform: translateY(-35px);
 }
 }
 
