@@ -33,7 +33,7 @@
        
           
         font-family: "Rhodium Libre", serif;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 700;
           max-width: 400px;
           
@@ -73,6 +73,7 @@
         animation-range: entry cover 40%;
       }
       .global {
+        font-size: 18px;
         margin-left: 30px;
         font-family: "Rhodium Libre", serif;
         transform: translateY(50px);
@@ -92,6 +93,7 @@
       }
 
       .expert {
+        font-size: 18px;
         margin-left: 30px;
         font-family: "Rhodium Libre", serif;
         transform: translateY(20px);
