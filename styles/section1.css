@@ -25,13 +25,14 @@
   .section1 {
     display: flex;
     flex-direction: column;
-    background-color: #F7EFCB;
+    background: linear-gradient(90deg, rgb(0, 0, 0), #5e620f);
     height: auto;
     
   }
 
 
 .sTitle {
+  color: #fff;
   align-items: center;
   justify-content: center;
   font-family: "Rhodium Libre", serif;
@@ -44,6 +45,7 @@
   animation-timeline: view();
   animation-range: entry cover 40%;
   margin-bottom: 50px;
+  border-bottom: dotted 2px white;
 }
 img {
 
@@ -62,6 +64,8 @@ img {
 }
 
 .crafting {
+  position: relative;
+  color: #fff;
     font-family: "Rhodium Libre", serif;
     font-size: 18px;
     font-weight: 700;
@@ -69,30 +73,33 @@ img {
     text-align: center;
     transform: translateY(20px);
     max-width: 400px;
-    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
     margin-right: 10px;
     animation: fadeIn linear; 
     animation-timeline: view();
     animation-range: entry cover 20%;
-    border-bottom: 2px solid black;
-    
 }
-.craftingP {
 
+
+
+.craftingP {
+  color: #fff;
   font-family: "Rhodium Libre", serif;
   font-size: 14px;
   font-weight: 400;
   max-width: 400px;
   text-align: left;
   transform: translateY(20px);
-  max-width: 400px;
   margin-left: 35px;
   margin-right: 10px;
+  margin-top: 5px;
   line-height: 20px;
   animation: fadeIn linear; 
   animation-timeline: view();
   animation-range: entry cover 20%;
 }
+
 
 .text1 {
 transform: translateY(-35px);

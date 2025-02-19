@@ -2,9 +2,12 @@
 
   @keyframes fadeIn {
     from {
-      opacity: 0;
-      scale: 0.7;
+      opacity: 0.2;
+      scale: 0.8;
+      
+      
     }
+
     to {
       opacity: 1;
       scale: 1;
@@ -16,98 +19,91 @@
     opacity: 0.2; /* Start invisible */
     animation: fadeIn 0.6s ease-out forwards; 
   }
+
+
+  
+  @keyframes slide-from-left {
+    from {
+      transform: translateX(-50%);
+      scale: 0.5;
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes slide-from-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
   
   /* Optional: Delay animations for staggered effects */
   .fade-in.delay-1 { animation-delay: 0.2s; }
   .fade-in.delay-2 { animation-delay: 0.4s; }
 
   
+
+
     .section2 {
         display: flex;
         flex-direction: column;
-        background-color: #F7EFCB;
+        background-color: #feffea;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23fafbd9' fill-opacity='1'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
         height: max-content;
         padding-bottom: 20px;
+      
       }
       .crafting2 {
-       
-          
         font-family: "Rhodium Libre", serif;
-          font-size: 20px;
-          font-weight: 700;
-          max-width: 400px;
-          
-          transform: translateY(20px);
-          max-width: 400px;
-          margin-left: 30px;
+          font-size: 26px;
+          font-weight: 400;
+          max-width: 300px;
+          transform: translateY(10px);
+          margin-left: 50px;
           margin-right: 10px;
           animation: fadeIn linear; 
           animation-timeline: view();
-          animation-range: entry cover 20%;
-          border-bottom: 2px solid black;
+          animation-range: entry cover 40%;
       }
+      
+      span {
+        border-bottom: 1px solid black;
+      }
+
       .craftingP2 {
-        
         font-family: "Rhodium Libre", serif;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
-        max-width: 400px;
-        transform: translateY(20px);
-        max-width: 400px;
-        line-height: 20px;
-        margin-left: 30px;
+        max-width: 70%;
+        line-height: 28px;
+        margin-left: 50px;
         margin-right: 10px;
         animation: fadeIn linear; 
         animation-timeline: view();
-        animation-range: entry cover 20%;
-      }
-      .worldmap {
-        transform: translateY(50px);
-        justify-content: center;
-        width: 90%;
-        margin: 0 auto; /* add this line to center the image horizontally */
-        display: block;
-        border-radius: 5px;
-        animation: fadeIn linear; 
-        animation-timeline: view();
         animation-range: entry cover 40%;
-      }
-      .global {
-        font-size: 18px;
-        margin-left: 30px;
-        font-family: "Rhodium Libre", serif;
-        transform: translateY(50px);
-        animation: fadeIn linear; 
-        animation-timeline: view();
-        animation-range: entry cover 20%;
-      }
-      .globalP {
-        font-size: 14px;
-        margin-left: 30px;
-        font-family: "Rhodium Libre", serif;
-        transform: translateY(30px);
-        width: 300px;
-        animation: fadeIn linear; 
-        animation-timeline: view();
-        animation-range: entry cover 20%;
       }
 
-      .expert {
-        font-size: 18px;
-        margin-left: 30px;
-        font-family: "Rhodium Libre", serif;
-        transform: translateY(20px);
-        animation: fadeIn linear; 
+      .picture1 {
+        animation: slide-from-left ease-out ;
         animation-timeline: view();
-        animation-range: entry cover 40%;
+        animation-range: entry cover 20%;
       }
-      .expertP {
-        font-size: 14px;
-        margin-left: 30px;
-        font-family: "Rhodium Libre", serif;
-        width: 300px;
-        animation: fadeIn linear; 
+      .picture2 {
+        animation: slide-from-right ease-out ;
         animation-timeline: view();
-        animation-range: entry cover 40%;
+        animation-range: entry cover 20%;
       }
     }
+   
+
+
