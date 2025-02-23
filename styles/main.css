@@ -45,8 +45,9 @@ main {
  .visitBtn2 {
   background-color: white;
   color: black;
-  width: 100px;
-  height: 45px;
+  font-size: 18px;
+  width: 120px;
+  height: 55px;
   margin-left: 60px;
   transform: translateY(-20px);
   font-family: "Rhodium Libre", serif;
