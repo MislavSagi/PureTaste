@@ -20,23 +20,4 @@ function toggleMenu(icon) {
   };
 
 
-  const navBar = document.getElementById('navBar');
-
-  // Function to toggle the nav bar's visibility and opacity
-  function toggleNavBar() {
-    if (navBar.style.opacity === '0') {
-      // Open the nav bar
-      navBar.style.opacity = '1';
-      navBar.style.display = 'block';
-    } else {
-      // Close the nav bar
-      navBar.style.opacity = '0';
-      setTimeout(() => {
-        navBar.style.display = 'none';
-      }, 500);
-    }
-  }
-  
-  // Add an event listener to the toggle button
-  document.getElementById('toggleButton').addEventListener('click', toggleNavBar);
   
