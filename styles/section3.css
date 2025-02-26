@@ -9,7 +9,7 @@
   display: flex;
 
   width: 80%;
-  max-width: 400px;
+  
   border: 1px solid black;
   height: 600px;
   flex-direction: column;
@@ -22,8 +22,8 @@
   font-family: "Rhodium Libre", serif;
  justify-content: center;
  text-align: center;
- font-size: 30px;
- width: 220px;
+ font-size: 50px;
+ max-width: 800px;
  animation: fadeIn3 linear; 
  animation-timeline: view();
  animation-range: entry cover 50%;
@@ -34,7 +34,8 @@
   font-family: "Rhodium Libre", serif;
   justify-content: center;
   text-align: center;
-  width: 250px;
+  font-size: 26px;
+  max-width: 700px;
   animation: fadeIn3 linear; 
   animation-timeline: view();
   animation-range: entry cover 20%;
@@ -42,19 +43,24 @@
 }
 
 .iconPoor {
-  margin: 20px auto;
+  margin: 0px auto;
   justify-content: center;
-max-width: 150px;
+max-width: 200px;
+height: 200px;
+padding: 50px;
+margin-right: 0;
 animation: fadeIn3 linear; 
 animation-timeline: view();
 animation-range: entry cover 20%;
 }
 
-.visitBtn3 {
-margin: 20px auto;
-width: 110px;
-height: 50px;
-font-size: 16px;
+.visitBtn4 {
+  margin: auto;
+  margin-left: 50px;
+width: 200px;
+align-self: center;
+height: 100px;
+font-size: 28px;
 font-weight: 400;
 background-color: transparent;
 color: black;
@@ -62,6 +68,11 @@ font-family: "Rhodium Libre", serif;
 animation: fadeIn3 linear; 
 animation-timeline: view();
 animation-range: entry cover 20%;
+}
+
+.iconBtn {
+  display: flex;
+  margin-right: 50px;
 }
 
 @media (max-width: 768px) { 
@@ -79,10 +90,7 @@ animation-range: entry cover 20%;
     width: 80%;
     max-width: 400px;
     border: 1px solid black;
-    height: 600px;
-    flex-direction: column;
-    
-    
+    height: 650px;
  }
 
  .discover {
@@ -91,7 +99,7 @@ animation-range: entry cover 20%;
    justify-content: center;
    text-align: center;
    font-size: 30px;
-   width: 220px;
+   max-width: 300px;
    animation: fadeIn3 linear; 
    animation-timeline: view();
    animation-range: entry cover 50%;
@@ -102,6 +110,7 @@ animation-range: entry cover 20%;
     font-family: "Rhodium Libre", serif;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
     width: 250px;
     animation: fadeIn3 linear; 
     animation-timeline: view();
@@ -109,20 +118,30 @@ animation-range: entry cover 20%;
    
 }
 
+.iconBtn {
+ flex-direction: column;
+ margin: 0 auto;
+  max-width: 80%;
+  
+}
+
 .iconPoor {
-    margin: 20px auto;
+    margin: auto;
     justify-content: center;
-  max-width: 150px;
+  max-width: 200px;
+  height: auto;
   animation: fadeIn3 linear; 
   animation-timeline: view();
   animation-range: entry cover 20%;
+  justify-content: center;
   }
 }
-.visitBtn3 {
-margin: 20px auto;
-width: 110px;
-height: 50px;
-font-size: 16px;
+.visitBtn4 {
+  margin-left: 20px;
+width: 200px;
+align-self: center;
+height: 80px;
+font-size: 26px;
 font-weight: 400;
 background-color: transparent;
 color: black;
