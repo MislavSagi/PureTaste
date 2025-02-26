@@ -1,4 +1,113 @@
+:root {
+  --primary-color: #F6F8CC;
+ }
 
+  body { margin: 0; 
+   }
+
+
+  .nav {
+      display: flex;
+      background-color: var(--primary-color);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+     width: 100%;
+     height: 60px;
+  }
+  .logo {
+    font-family: "Major Mono Display", serif;
+      font-weight: 300;
+      font-size: 18px;
+       margin-left: 30px;
+      cursor: pointer;
+
+  }
+
+  button {
+    margin-left: auto;
+     width: 90px;
+     height: 40px;
+     margin-right: 10px;
+     font-size: 14px;
+     font-weight: 400;
+     background-color: black;
+     color: white;
+     font-family: "Rhodium Libre", serif;
+  }
+
+  button:hover {
+    background-color: rgb(174, 168, 168);
+  }  
+
+ .address {
+  margin-right: 30px;
+ }
+
+ .desktopMenu {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rhodium Libre", serif;
+  font-size: 18px;
+  margin-right: 100px;
+  cursor: pointer;
+  gap: 80px;
+ }
+
+ .menuItem {
+  margin: 0 auto;
+  margin-right: 20px; 
+}
+
+
+ .menuItem:hover {
+ border-bottom: 1px solid black;
+ }
+
+
+.menu-icon {
+  display: none;
+}
+.navBar {
+ display: none;
+}
+.navBar.show {
+display: grid;
+}
+
+
+.navP {
+margin: 20px;
+padding: 0;
+cursor: pointer;
+
+}
+.navP:active {
+border-bottom: 2px solid #FFCF30 ;
+}
+
+.navIcon {
+position: absolute;
+width: 90px;
+right: 50px;
+}
+.navIcon2 {
+position: absolute;
+width: 50px;
+left: 50px;
+transform: translateY(-50px);
+}
+.navIcon3 {
+position: absolute;
+width: 80px;
+left: 30px;
+transform: translateY(50px);
+}
+.tag {
+all: unset;
+}
 
 @keyframes fadeIn {
     from {
@@ -21,6 +130,14 @@
   .fade-in.delay-1 { animation-delay: 0.2s; }
   .fade-in.delay-2 { animation-delay: 0.8s; }
   
+
+
+  .desktopMenu {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
 
 .main {
     display: flex;
@@ -104,6 +221,89 @@
     font-family: "Rhodium Libre", serif;
     
   }
+
+  .menu-icon {
+    cursor: pointer;
+    padding: 20px;
+    display: inline-block;
+  }
+
+
+  .menu-icon__bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+  }
+
+  .menu-icon.active .menu-icon__bar:first-child {
+    transform: translateY(9px) rotate(-45deg);
+  }
+
+  .menu-icon.active .menu-icon__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active .menu-icon__bar:last-child {
+    transform: translateY(-9px) rotate(45deg);
+  }
+
+  .navBar {
+    font-family: "Major Mono Display", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 230px;
+   color: #FFCF30;
+   font-size: 34px;
+   display: none; 
+}
+
+
+
+
+
+ .navBar.show {
+  display: grid;
+  transition: 0.5s;
+
+ }
+ 
+
+
+.navP {
+  margin: 20px;
+  padding: 0;
+  cursor: pointer;
+
+}
+.navP:active {
+  border-bottom: 2px solid #FFCF30 ;
+}
+
+.navIcon {
+  position: absolute;
+  width: 90px;
+  right: 50px;
+}
+.navIcon2 {
+  position: absolute;
+  width: 50px;
+  left: 50px;
+  transform: translateY(-50px);
+}
+.navIcon3 {
+  position: absolute;
+  width: 80px;
+  left: 30px;
+  transform: translateY(50px);
+}
+
+
 
   .tag {
     all: unset;

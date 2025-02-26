@@ -16,11 +16,11 @@
      height: 45px;
   }
   .logo {
-
+    font-family: "Major Mono Display", serif;
       font-weight: 300;
       font-size: 18px;
        margin-left: 68px;
-      
+      cursor: pointer;
 
   }
 
@@ -39,7 +39,34 @@
   button:hover {
     background-color: rgb(174, 168, 168);
   }  
-/* Container for the menu icon */
+
+ .address {
+  margin-right: 30px;
+ }
+
+ .desktopMenu {
+  width: 400px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-family: "Rhodium Libre", serif;
+  font-size: 18px;
+  margin-right: 100px;
+  cursor: pointer;
+  gap: 80px;
+ }
+
+ .menuItem {
+  margin: 0 auto;
+  margin-right: 20px; /* Add this line */
+}
+
+
+ .menuItem:hover {
+ border-bottom: 1px solid black;
+ }
+
 
 .menu-icon {
   display: none;
@@ -93,6 +120,10 @@ all: unset;
      }
 
 
+    .address {
+      display: none;
+    }
+
     .nav {
         display: flex;
         background-color: var(--primary-color);
@@ -103,13 +134,17 @@ all: unset;
        height: 60px;
     }
     .logo {
-      font-family: "Stick", serif;
+      font-family: "Major Mono Display", serif;
 
         font-weight: 300;
         font-size: 18px;
          margin-left: 30px;
   
 
+    }
+
+    .desktopMenu {
+      display: none;
     }
 
    
