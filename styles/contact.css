@@ -67,44 +67,10 @@
  }
 
 
-.menu-icon {
+.menu-icon__bar {
   display: none;
 }
-.navBar {
- display: none;
-}
-.navBar.show {
-display: grid;
-}
 
-
-.navP {
-margin: 20px;
-padding: 0;
-cursor: pointer;
-
-}
-.navP:active {
-border-bottom: 2px solid #FFCF30 ;
-}
-
-.navIcon {
-position: absolute;
-width: 90px;
-right: 50px;
-}
-.navIcon2 {
-position: absolute;
-width: 50px;
-left: 50px;
-transform: translateY(-50px);
-}
-.navIcon3 {
-position: absolute;
-width: 80px;
-left: 30px;
-transform: translateY(50px);
-}
 .tag {
 all: unset;
 }
@@ -303,9 +269,20 @@ all: unset;
   transform: translateY(50px);
 }
 
-
-
   .tag {
     all: unset;
+    }
+
+
+          @media (max-width: 768px) {
+            .menu-icon__bar {
+              display: block;
+              width: 30px;
+              height: 3px;
+              background-color: #333;
+              margin: 6px 0;
+              transition: 0.4s;
+              border-radius: 2px;
+            }
+          
           }
-        
