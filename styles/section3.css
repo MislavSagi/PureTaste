@@ -43,7 +43,7 @@
 }
 
 .iconPoor {
-  margin: 0px auto;
+  margin: 0px ;
   justify-content: center;
 max-width: 200px;
 height: 200px;
@@ -55,10 +55,9 @@ animation-range: entry cover 20%;
 }
 
 .visitBtn4 {
-  margin: auto;
+
   margin-left: 50px;
 width: 200px;
-align-self: center;
 height: 100px;
 font-size: 28px;
 font-weight: 400;
@@ -71,9 +70,12 @@ animation-range: entry cover 20%;
 }
 
 .iconBtn {
+  margin-left: 50px;
   display: flex;
-  margin-right: 50px;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
+
 
 @media (max-width: 768px) { 
    

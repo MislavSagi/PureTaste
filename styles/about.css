@@ -1,5 +1,8 @@
 :root {
-  --primary-color: #F6F8CC;
+  --primary-color: #fdeab2
+
+
+  ;
  }
 
   body { margin: 0; 
@@ -13,13 +16,13 @@
       justify-content: space-between;
       align-items: center;
      width: 100%;
-     height: 60px;
+     height: 45px;
   }
   .logo {
     font-family: "Major Mono Display", serif;
       font-weight: 300;
       font-size: 18px;
-       margin-left: 30px;
+       margin-left: 68px;
       cursor: pointer;
 
   }
@@ -51,7 +54,6 @@
   align-items: center;
   font-family: "Rhodium Libre", serif;
   font-size: 18px;
-  margin-right: 100px;
   cursor: pointer;
   gap: 80px;
  }
@@ -108,35 +110,7 @@ transform: translateY(50px);
 .tag {
 all: unset;
 }
-  
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      scale: 0.7;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }
-  
-  
-  .fade-in {
-    opacity: 0.2; /* Start invisible */
-    animation: fadeIn 0.6s ease-out forwards; 
-  }
-  
-  /* Optional: Delay animations for staggered effects */
-  .fade-in.delay-1 { animation-delay: 0.2s; }
-  .fade-in.delay-2 { animation-delay: 0.4s; }
 
-  .desktopMenu {
-    display: none;
-  }
-
-  .address {
-    display: none;
-  }
 
 .main {
     display: flex;
@@ -233,88 +207,187 @@ all: unset;
 
   }
 
+  @media (max-width: 768px) {
+
+    :root {
+     --primary-color: #fdeab2;
+    }
+ 
+     body { margin: 0; 
+      }
+ 
+ 
+     .address {
+       display: none;
+     }
+ 
+     .nav {
+         display: flex;
+         background-color: var(--primary-color);
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+        width: 100%;
+        height: 60px;
+     }
+     .logo {
+       font-family: "Major Mono Display", serif;
+ 
+         font-weight: 300;
+         font-size: 18px;
+          margin-left: 30px;
+   
+ 
+     }
+ 
+     .desktopMenu {
+       display: none;
+     }
+ 
+    
+  /* Container for the menu icon */
   .menu-icon {
-    cursor: pointer;
-    padding: 20px;
-    display: inline-block;
-  }
-
-
-  .menu-icon__bar {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 2px;
-  }
-
-  .menu-icon.active .menu-icon__bar:first-child {
-    transform: translateY(9px) rotate(-45deg);
-  }
-
-  .menu-icon.active .menu-icon__bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-icon.active .menu-icon__bar:last-child {
-    transform: translateY(-9px) rotate(45deg);
-  }
-
-  .navBar {
-    font-family: "Major Mono Display", serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 230px;
-   color: #FFCF30;
-   font-size: 34px;
-   display: none; 
-}
-
-
-
-
-
- .navBar.show {
-  display: grid;
-  transition: 0.5s;
-
+     cursor: pointer;
+     padding: 20px;
+     display: inline-block;
+   }
+ 
+   /* Individual bars of the hamburger icon */
+   .menu-icon__bar {
+     width: 30px;
+     height: 3px;
+     background-color: #333;
+     margin: 6px 0;
+     transition: 0.4s;
+     border-radius: 2px;
+   }
+ 
+   /* Transformations when the menu is active (X shape) */
+   .menu-icon.active .menu-icon__bar:first-child {
+     transform: translateY(9px) rotate(-45deg);
+   }
+ 
+   .menu-icon.active .menu-icon__bar:nth-child(2) {
+     opacity: 0;
+   }
+ 
+   .menu-icon.active .menu-icon__bar:last-child {
+     transform: translateY(-9px) rotate(45deg);
+   }
+ 
+   
+   .navBar {
+     font-family: "Major Mono Display", serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
+     height: 230px;
+    color: #FFCF30;
+    font-size: 34px;
+    display: none; 
  }
  
-
-
-.navP {
-  margin: 20px;
-  padding: 0;
-  cursor: pointer;
-
-}
-.navP:active {
-  border-bottom: 2px solid #FFCF30 ;
-}
-
-.navIcon {
-  position: absolute;
-  width: 90px;
-  right: 50px;
-}
-.navIcon2 {
-  position: absolute;
-  width: 50px;
-  left: 50px;
-  transform: translateY(-50px);
-}
-.navIcon3 {
-  position: absolute;
-  width: 80px;
-  left: 30px;
-  transform: translateY(50px);
-}
-
-
-  .tag {
-    all: unset;
-          }
+ 
+ 
+ 
+ 
+  .navBar.show {
+   display: grid;
+   transition: 0.5s;
+ 
+  }
+  
+ 
+ 
+ .navP {
+   margin: 20px;
+   padding: 0;
+   cursor: pointer;
+ 
+ }
+ .navP:active {
+   border-bottom: 2px solid #FFCF30 ;
+ }
+ 
+ .navIcon {
+   position: absolute;
+   width: 90px;
+   right: 50px;
+ }
+ .navIcon2 {
+   position: absolute;
+   width: 50px;
+   left: 50px;
+   transform: translateY(-50px);
+ }
+ .navIcon3 {
+   position: absolute;
+   width: 80px;
+   left: 30px;
+   transform: translateY(50px);
+ }
+ .tag {
+   all: unset;
+ }
+ }
+       
+ 
+ 
+ .main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-image: url(images/backgroundDark.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: max-content;
+     background-position: center;
+     padding-bottom: 50px;
+ }
+ 
+ .title {
+   font-family: "Major Mono Display", serif;
+   color: #FFCF30;
+   margin: 0;
+   justify-content: center;
+   align-self: center;
+   font-size: 32px;
+   font-weight: 600;
+   text-shadow: 0 0 2px #000;
+   margin-top: 20px;
+   font-weight: 200;
+   width: 100%; 
+   text-align: center; 
+   animation: fadeIn linear;
+   animation-timeline: view();
+   animation-range: entry cover 20%;
+ }
+ 
+ .contactInfo {
+     display: flex;
+     flex-direction: column;
+     font-family: "Rhodium Libre", serif;
+     color: white;
+     margin: 0 auto; 
+     justify-content: center; 
+     align-items: center;
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.6s ease-out forwards;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    

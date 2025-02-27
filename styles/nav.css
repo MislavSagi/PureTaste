@@ -1,5 +1,8 @@
 :root {
-  --primary-color: #F6F8CC;
+  --primary-color: #fdeab2
+
+
+  ;
  }
 
   body { margin: 0; 
@@ -52,7 +55,6 @@
   align-items: center;
   font-family: "Rhodium Libre", serif;
   font-size: 18px;
-  margin-right: 100px;
   cursor: pointer;
   gap: 80px;
  }
@@ -113,7 +115,7 @@ all: unset;
 @media (max-width: 768px) {
 
    :root {
-    --primary-color: #F6F8CC;
+    --primary-color: #fdeab2;
    }
 
     body { margin: 0; 

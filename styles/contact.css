@@ -1,5 +1,8 @@
 :root {
-  --primary-color: #F6F8CC;
+  --primary-color: #fdeab2
+
+
+  ;
  }
 
   body { margin: 0; 
@@ -13,13 +16,13 @@
       justify-content: space-between;
       align-items: center;
      width: 100%;
-     height: 60px;
+     height: 45px;
   }
   .logo {
     font-family: "Major Mono Display", serif;
       font-weight: 300;
       font-size: 18px;
-       margin-left: 30px;
+       margin-left: 68px;
       cursor: pointer;
 
   }
@@ -51,14 +54,13 @@
   align-items: center;
   font-family: "Rhodium Libre", serif;
   font-size: 18px;
-  margin-right: 100px;
   cursor: pointer;
   gap: 80px;
  }
 
  .menuItem {
   margin: 0 auto;
-  margin-right: 20px; 
+  margin-right: 20px; /* Add this line */
 }
 
 
@@ -67,134 +69,94 @@
  }
 
 
-.menu-icon__bar {
+.menu-icon {
   display: none;
 }
+.navBar {
+ display: none;
+}
+.navBar.show {
+display: grid;
+}
 
+
+.navP {
+margin: 20px;
+padding: 0;
+cursor: pointer;
+
+}
+.navP:active {
+border-bottom: 2px solid #FFCF30 ;
+}
+
+.navIcon {
+position: absolute;
+width: 90px;
+right: 50px;
+}
+.navIcon2 {
+position: absolute;
+width: 50px;
+left: 50px;
+transform: translateY(-50px);
+}
+.navIcon3 {
+position: absolute;
+width: 80px;
+left: 30px;
+transform: translateY(50px);
+}
 .tag {
 all: unset;
 }
 
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px); 
+@media (max-width: 768px) {
+
+   :root {
+    --primary-color: #fdeab2;
+   }
+
+    body { margin: 0; 
+     }
+
+
+    .address {
+      display: none;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+
+    .nav {
+        display: flex;
+        background-color: var(--primary-color);
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       width: 100%;
+       height: 60px;
     }
-  }
-  
-  
-  .fade-in {
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 0.4s ease-out forwards; 
-  }
-  
-  /* Optional: Delay animations for staggered effects */
-  .fade-in.delay-1 { animation-delay: 0.2s; }
-  .fade-in.delay-2 { animation-delay: 0.8s; }
+    .logo {
+      font-family: "Major Mono Display", serif;
+
+        font-weight: 300;
+        font-size: 18px;
+         margin-left: 30px;
   
 
+    }
 
-  .desktopMenu {
-    display: none;
-  }
-  .address {
-    display: none;
-  }
+    .desktopMenu {
+      display: none;
+    }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(images/backgroundDark.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: max-content;
-    background-position: center;
-    padding-bottom: 50px;
-}
-
-.title {
-    font-family: "Major Mono Display", serif;
-    color: #FFCF30;
-    margin: 0 ;
-    justify-content: center;
-    align-self: center;
-    font-size: 32px;
-    font-weight: 600;
-    text-shadow: 0 0 2px #000;
-    margin-top: 20px;
-    font-weight: 200;
-    width: 90%;
-    animation: fadeIn linear; 
-    animation-timeline: view();
-    animation-range: entry cover 20%;
-    
-}
-
-.contactInfo {
-    display: flex;
-    flex-direction: column;
-    font-family: "Rhodium Libre", serif;
-    color: white;
-    margin: 0 auto; 
-    justify-content: center; 
-    align-items: center;
-   max-width: 400px;
-   width: 90%;
-   animation: fadeIn 0.6s ease-out forwards;
-}
-
-
-
-.info {
-    font-size: 18px;
-    max-width: 300px;
-    animation: fadeIn linear; 
-    animation-timeline: view();
-    animation: fadeIn 0.6s ease-out forwards;
    
-}
-
-
-
-.endText {
-    display: flex;
-    margin-top: 40px;
-    font-size: 22px;
-    max-width: 400px;
-    animation: fadeIn linear; 
-    animation-timeline: view();
-    animation-range: entry cover 20%;
-}
-
-.map {
-    max-width: 400px;
-    height: 250px;
-    width: 80%;
-    border-radius: 20px;
-    animation: fadeIn 0.6s ease-out forwards;
-}
-
-.backBtn {
-    background-color: white;
-    color: black;
-    width: 120px;
-    height: 55px;
-    font-family: "Rhodium Libre", serif;
-    
-  }
-
-  .menu-icon {
+ /* Container for the menu icon */
+ .menu-icon {
     cursor: pointer;
     padding: 20px;
     display: inline-block;
   }
 
-
+  /* Individual bars of the hamburger icon */
   .menu-icon__bar {
     width: 30px;
     height: 3px;
@@ -204,6 +166,7 @@ all: unset;
     border-radius: 2px;
   }
 
+  /* Transformations when the menu is active (X shape) */
   .menu-icon.active .menu-icon__bar:first-child {
     transform: translateY(9px) rotate(-45deg);
   }
@@ -216,6 +179,7 @@ all: unset;
     transform: translateY(-9px) rotate(45deg);
   }
 
+  
   .navBar {
     font-family: "Major Mono Display", serif;
     display: flex;
@@ -268,10 +232,99 @@ all: unset;
   left: 30px;
   transform: translateY(50px);
 }
+.tag {
+  all: unset;
+}
+}
+      
 
-  .tag {
-    all: unset;
-    }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/backgroundDark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    background-position: center;
+    padding-bottom: 50px;
+}
+
+.title {
+  font-family: "Major Mono Display", serif;
+  color: #FFCF30;
+  margin: 0;
+  justify-content: center;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 600;
+  text-shadow: 0 0 2px #000;
+  margin-top: 20px;
+  font-weight: 200;
+  width: 100%; 
+  text-align: center; 
+  animation: fadeIn linear;
+  animation-timeline: view();
+  animation-range: entry cover 20%;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: "Rhodium Libre", serif;
+    color: white;
+    margin: 0 auto; 
+    justify-content: center; 
+    align-items: center;
+   max-width: 400px;
+   width: 90%;
+   animation: fadeIn 0.6s ease-out forwards;
+}
+
+
+
+.info {
+    font-size: 18px;
+    max-width: 300px;
+    animation: fadeIn linear; 
+    animation-timeline: view();
+    animation: fadeIn 0.6s ease-out forwards;
+   
+}
+
+
+
+.endText {
+    display: flex;
+    margin-top: 40px;
+    font-size: 22px;
+    max-width: 400px;
+    animation: fadeIn linear; 
+    animation-timeline: view();
+    animation-range: entry cover 20%;
+}
+
+.map {
+    max-width: 400px;
+    height: 250px;
+    width: 80%;
+    border-radius: 20px;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.backBtn {
+  background-color: white;
+  color: black;
+  width: 120px;
+  height: 55px;
+  font-family: "Rhodium Libre", serif;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
 
 
           @media (max-width: 768px) {
