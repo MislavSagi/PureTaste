@@ -1,35 +1,47 @@
 
     .footer {
         display: flex;
-        flex-direction: column;
-            background-color: #000000;
+            background-color: #0a1224;
             height: max-content;
             font-family: "Rhodium Libre", serif;
-            justify-content: center;
-            margin: 0 auto;
-            align-items: center;
             height: max-content;
             color: white;
+            height: 30vh;
     }
 
     .logoFooter {
-        font-family: "Stick", serif;
+        margin-top: 40px;
+        margin-left: 40px;
+        font-family: "Major Mono Display", serif;
         font-weight: 300;
         font-size: 24px;
         align-items: start;
     }
 
     .footerText {
-        margin-left: 30px;
-
+       max-width: 400px;
     }
 
-    .map {
-        max-width: 500px;
-        width: 90%;
-        border-radius: 20px;
+   .address {
+    max-width: 400px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   }
 
-    }
+  .locationIcon {
+   margin-left: 50px;
+   max-width: 200px;
+  }
+
+   .phone {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+ 
+   }
     
     .social {
         display: flex;
@@ -53,11 +65,16 @@
     }
 
    .rights {
+    font-family: "Rhodium Libre", serif;
+    color: white;
     display: flex;
     justify-content: center;
-     
+     background-color: #0a1224;
     padding-top: 20px;
-    border-top: solid 1px black;
+    border-top: solid 1px rgb(255, 255, 255);
+    margin: 0;
+    padding-bottom: 10px;
+    
    }
 
 
@@ -113,32 +130,9 @@
    .rights {
     display: flex;
     justify-content: center;
-     
-    padding-top: 20px;
-    border-top: solid 1px black;
+    border-top: solid 1px rgb(255, 255, 255);
+    max-width: 100vh;
    }
 }
 
 
-@keyframes fadeIn3 {
-    from {
-      opacity: 0;
-      scale: 0.2;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }
-  
-  
-  .fade-in3 {
-    opacity: 0.2; /* Start invisible */
-   
-  }
-  
-  /* Optional: Delay animations for staggered effects */
-  .fade-in3.delay-1 { animation-delay: 0.2s; }
-  .fade-in3.delay-2 { animation-delay: 0.4s; }
- 
- 
