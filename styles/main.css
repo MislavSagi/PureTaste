@@ -106,9 +106,7 @@ cursor: pointer;
 
 w
    main {   
-    background-attachment: fixed;
     display: flex;
-    align-items: center;
     background-image: url(images/background.jpg);
     background-size: 80% auto;
 
@@ -173,7 +171,6 @@ w
 
   main {   
     display: flex;
-    align-items: center;
     background-image: url(images/background.jpg);
     background-size: cover;
     max-width: 100%;
