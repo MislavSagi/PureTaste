@@ -1,4 +1,6 @@
 
+
+
 main {   
   position: relative;
   display: flex;
@@ -11,6 +13,9 @@ main {
   margin: 0;
   overflow-x: auto;
  }
+
+
+
  .want {
   font-family: "Major Mono Display", serif;
   color: white;
@@ -105,9 +110,8 @@ w
     display: flex;
     align-items: center;
     background-image: url(images/background.jpg);
-    background-size: 100% auto;
-    max-width: 1200px;
-  
+    background-size: 80% auto;
+
 
    }
    
@@ -166,6 +170,16 @@ w
 }
 @media (max-width: 440px) { 
 
+
+  main {   
+    display: flex;
+    align-items: center;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    max-width: 100%;
+    overflow: hidden;
+    
+   }
   .mainTitle {
     font-size: 40px;
     width: 200px;
