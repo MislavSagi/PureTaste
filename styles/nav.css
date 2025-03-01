@@ -6,7 +6,7 @@ body{margin:0}
 button{margin-left:auto;width:90px;height:40px;margin-right:10px;font-size:14px;font-weight:400;background-color:#000;color:#fff;font-family:"Rhodium Libre",serif}
 button:hover{background-color:#aea8a8}
 .address{margin-right:30px}
-.desktopMenu{width:400px;display:flex;justify-content:center;align-items:center;font-family:"Rhodium Libre",serif;font-size:18px;cursor:pointer;gap:80px}
+.desktopMenu{width:400px;display:flex;justify-content:center;align-items:center;font-family:"Rhodium Libre",serif;font-size:18px;cursor:pointer;gap:80px;}
 .menuItem{margin:0 auto;margin-right:20px}
 .menuItem:hover{border-bottom:1px solid #000}
 .menu-icon{display:none}
