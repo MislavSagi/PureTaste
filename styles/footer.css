@@ -35,12 +35,12 @@
   }
 
    .phone {
-    max-width: 200px;
+    max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
- 
+    margin-right: 100px;
+   
    }
     
     .social {
@@ -77,8 +77,16 @@
     
    }
 
+   .map {
+    max-width: 20%;
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 250px;
+    border-radius: 20px;
+   }
 
-@media (max-width: 768px) { 
+
+@media (max-width: 1068px) { 
     .footer {
         display: flex;
         flex-direction: column;
@@ -86,7 +94,9 @@
             height: max-content;
             font-family: "Rhodium Libre", serif;
             color: white;
+            
     }
+    
 
     .logoFooter {
         font-family: "Major Mono Display", serif;
@@ -102,9 +112,11 @@
 
     .map {
         max-width: 500px;
-        width: 90%;
+        justify-content: center;
+        margin: 0 auto;
+        width: 70%;
         border-radius: 20px;
-
+       
     }
     
     .social {
@@ -131,7 +143,26 @@
     display: flex;
     justify-content: center;
     border-top: solid 1px rgb(255, 255, 255);
-    max-width: 100vh;
+    max-width: 120vh;
+
+   }
+
+   .address {
+    padding: 20px;
+    justify-content: center;
+    margin: 0 auto;
+   }
+
+
+   .phone {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+    justify-content: center;
+    margin: 0 auto;
+   padding-bottom: 20px;
    }
 }
 

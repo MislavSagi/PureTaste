@@ -22,7 +22,7 @@
     font-family: "Major Mono Display", serif;
       font-weight: 300;
       font-size: 18px;
-       margin-left: 68px;
+       margin-left: 100px;
       cursor: pointer;
 
   }
@@ -122,8 +122,9 @@ all: unset;
      }
 
 
-    .address {
+    .phoneNumber {
       display: none;
+      
     }
 
     .nav {
