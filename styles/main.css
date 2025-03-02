@@ -173,10 +173,13 @@ w
 
 }
 @media (max-width: 400px) { 
+  
+  
   .container {
     max-width: 100vh;
     overflow-x: hidden;
   }
+
   .mainTitle {
     transform: translateY(-40px);
     font-family: 30px;
