@@ -1,21 +1,19 @@
-
-
+body {
+  overflow-x: hidden;
+}
 
 main {   
   position: relative;
   display: flex;
   align-items: center;
   background-size: cover;
-  background-image: url(images/background.avif);
+  background-image: url(images/background.webp);
   height: 95vh;
   background-position: center;
   background-repeat: no-repeat; 
   margin: 0;
   overflow-x: auto;
  }
-
-
-
  .want {
   font-family: "Major Mono Display", serif;
   color: white;
@@ -106,10 +104,13 @@ cursor: pointer;
 
 w
    main {   
+    position: relative;
     display: flex;
+    align-items: center;
     background-image: url(images/background.jpg);
-    background-size: 80% auto;
-
+    background-size: 100% auto;
+    max-width: 1200px;
+  
 
    }
    
@@ -120,6 +121,7 @@ w
     font-size: 46px;
      margin-left: 25px;
      transform: translateY(-80px);
+     overflow: hidden;
    }
    .intro {
     font-family: "Rhodium Libre", serif;
@@ -130,6 +132,7 @@ w
     margin-left: 25px;
     font-weight: 300;
     animation: fadeIn 0.6s ease-out forwards; 
+    overflow: hidden;
    }
 
    .visitBtn2 {
@@ -166,20 +169,8 @@ w
 }
 
 }
-@media (max-width: 440px) { 
-
-
-  main {   
-    display: flex;
-    background-image: url(images/background.jpg);
-    background-size: cover;
-    max-width: 100%;
-    overflow: hidden;
-    
-   }
+@media (max-width: 400px) { 
   .mainTitle {
-    font-size: 40px;
-    width: 200px;
     transform: translateY(-40px);
     font-family: 30px;
   }

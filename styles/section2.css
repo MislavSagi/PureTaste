@@ -1,16 +1,247 @@
-.section2{display:flex;flex-direction:column;background-color:#FEFFEA;
-  height:max-content;padding-bottom:20px}.crafting2{font-family:"Rhodium Libre",serif;font-size:26px;font-weight:400;
-    max-width:300px;transform:translateY(0px);margin-left:50px;margin-right:10px}span{border-bottom:1px solid #000}
-    .craftingP2{font-family:"Rhodium Libre",serif;font-size:16px;font-weight:400;max-width:70%;line-height:34px;margin-left:50px;
-      margin-right:10px;transform:translateY(-10px)}.picture1{margin:0 auto;justify-content:center;width:45%;margin-left:55px;margin-right:0}
-      .picture2{margin:0 auto;justify-content:center;width:45%;margin-left:0}
-      .visitMenu{justify-content:center;color:#000;margin:20px auto;width:110px;height:50px;font-size:14px;font-weight:400;
-        background-color:transparent;font-family:"Rhodium Libre",serif}.textBoxTop{margin:0 auto;border:1px solid #000;width:46%;
-          display:flex;flex-direction:column}.textBox{margin:0 auto;border:1px solid #000;width:46%;display:flex;flex-direction:column;margin-left:0;
-            margin-right:0}.textBoxMid{border:1px solid #000;width:46%;display:flex;flex-direction:column;margin-left:55px;margin-right:0}
-            .destopS2{display:flex;flex-direction:row}
-.destopMid{display:flex;flex-direction:row-reverse}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #FEFFEA;
+  height: max-content;
+  padding-bottom: 20px;
 
-@media (max-width: 768px){@keyframes fadeIn{from{opacity:.2;scale:.7}to{opacity:1;scale:1}}.fade-in{opacity:.2;animation:fadeIn .6s ease-out forwards}.fade-in.delay-1{animation-delay:.2s}.fade-in.delay-2{animation-delay:.4s}.section2{display:flex;flex-direction:column;background-color:#FEFFEA;height:max-content;padding-bottom:20px}.crafting2{font-family:"Rhodium Libre",serif;font-size:26px;font-weight:400;max-width:300px;transform:translateY(0px);margin-left:50px;margin-right:10px}span{border-bottom:1px solid #000}.craftingP2{font-family:"Rhodium Libre",serif;font-size:16px;font-weight:400;max-width:70%;line-height:34px;margin-left:50px;margin-right:10px;transform:translateY(-10px)}.picture1{margin:0 auto;justify-content:center;width:94.5%}.picture2{margin:0 auto;justify-content:center;width:94.5%}.visitMenu{justify-content:center;color:#000;margin:20px auto;width:110px;height:50px;font-size:14px;font-weight:400;background-color:transparent;font-family:"Rhodium Libre",serif}.textBoxTop{margin:0 auto;border:1px solid #000;display:flex;flex-direction:column;width:94.3%}.textBox{margin:0 auto;border:1px solid #000;width:94.3%;display:flex;flex-direction:column}.destopS2{display:flex;flex-direction:column}.destopMid{display:flex;flex-direction:column}.textBoxMid{margin:0 auto;border:1px solid #000;width:94.3%;display:flex;flex-direction:column}@keyframes slide-from-left{from{transform:translateX(-80%);scale:.7;opacity:0}to{transform:translateX(0);opacity:1;scale:1}}
-@keyframes slide-from-right{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}}
+}
+.crafting2 {
+  font-family: "Rhodium Libre", serif;
+    font-size: 26px;
+    font-weight: 400;
+    max-width: 300px;
+    transform: translateY(0px);
+    margin-left: 50px;
+    margin-right: 10px;
+    
+}
+
+span {
+  border-bottom: 1px solid black;
+}
+
+.craftingP2 {
+  font-family: "Rhodium Libre", serif;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 70%;
+  line-height: 34px;
+  margin-left: 50px;
+  margin-right: 10px;
+  transform: translateY(-10px);
+ 
+}
+
+.picture1 {
+  margin: 0 auto;
+  justify-content: center;
+width: 45%;
+margin-left: 55px;
+margin-right: 0;
+}
+.picture2 {
+  margin: 0 auto;
+  justify-content: center;
+width: 45%;
+margin-left: 0;
+
+}
+.visitMenu {
+  justify-content: center;
+  color: black;
+  margin: 20px auto;
+  width: 110px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  font-family: "Rhodium Libre", serif;
+
+  }
+  .textBoxTop {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.textBox {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+}
+.textBoxMid {
+  border: 1px solid black;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  margin-right: 0;
+}
+
+.destopS2 {
+  display: flex;
+  flex-direction: row;
+}
+.destopMid {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) { 
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.2;
+      scale: 0.7;
+      
+      
+    }
+
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  
+  .fade-in {
+    opacity: 0.2; /* Start invisible */
+    animation: fadeIn 0.6s ease-out forwards; 
+  }
+
+
+  
+  @keyframes slide-from-left {
+    from {
+      transform: translateX(-80%);
+      scale: 0.7;
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes slide-from-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Optional: Delay animations for staggered effects */
+  .fade-in.delay-1 { animation-delay: 0.2s; }
+  .fade-in.delay-2 { animation-delay: 0.4s; }
+
+  
+
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #FEFFEA;
+        height: max-content;
+        padding-bottom: 20px;
+      
+      }
+      .crafting2 {
+        font-family: "Rhodium Libre", serif;
+          font-size: 26px;
+          font-weight: 400;
+          max-width: 300px;
+          transform: translateY(0px);
+          margin-left: 50px;
+          margin-right: 10px;
+          
+      }
+      
+      span {
+        border-bottom: 1px solid black;
+      }
+
+      .craftingP2 {
+        font-family: "Rhodium Libre", serif;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 70%;
+        line-height: 34px;
+        margin-left: 50px;
+        margin-right: 10px;
+        transform: translateY(-10px);
+       
+      }
+
+      .picture1 {
+        margin: 0 auto;
+        justify-content: center;
+      width: 94.5%;
+      }
+      .picture2 {
+        margin: 0 auto;
+        justify-content: center;
+      width: 94.5%;
+      }
+      .visitMenu {
+        justify-content: center;
+        color: black;
+        margin: 20px auto;
+        width: 110px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 400;
+        background-color: transparent;
+        font-family: "Rhodium Libre", serif;
+      
+        }
+
+        .textBoxTop {
+          margin: 0 auto;
+          border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          width: 94.3%;
+        }
+
+      .textBox {
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 94.3%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .destopS2 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .destopMid {
+        display: flex;
+        flex-direction: column;
+      }
+      .textBoxMid {
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 94.3%;
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+   
+
 
