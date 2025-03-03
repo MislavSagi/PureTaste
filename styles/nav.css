@@ -24,8 +24,10 @@
       font-size: 18px;
        margin-left: 100px;
       cursor: pointer;
-
   }
+
+  .phoneNumber {
+    margin-right: 30px;  }
 
   button {
     margin-left: auto;
